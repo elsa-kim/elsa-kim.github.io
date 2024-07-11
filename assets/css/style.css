@@ -1,3 +1,129 @@
-h1 {
-    color: #4287f5;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+.side {
+  background-color: #4287f5cc;
+  height: 100vh;
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.photo {
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/FullSizeRender.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid aliceblue;
+}
+.name {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.info-title {
+  margin: 40px 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  row-gap: 10px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+.icon-href {
+  text-align: center;
+}
+.icon-href:not(:first-child) {
+  margin-top: 10px;
+}
+.cntct-grid {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+.cntct-grid p {
+  font-size: 14px;
+}
+.main {
+  color: #4287f5cc;
+  margin: 80px 100px;
+  width: 100%;
+}
+h2 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+.main-title {
+  font-size: 26px;
+  z-index: 5;
+  background-color: white;
+  display: inline-block;
+  padding: 0 10px 0 5px;
+  margin-left: 5px;
+  position: relative;
+}
+.main-group {
+  position: relative;
+  width: 90%;
+  height: 50%;
+}
+.content {
+  position: absolute;
+  border: 1.3px solid #4287f5cc;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  top: 13px;
+  font-size: 20px;
+}
+li {
+  padding-top: 10px;
+}
+.second {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.second div:first-child {
+  border-right: 2px dotted #4287f5cc;
+}
+.grid-list {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 10px;
+  padding-left: 5px;
+}
+.sub-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
