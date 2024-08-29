@@ -1,129 +1,181 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.name, .info-title{
+    font-family: NPSfontBold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 ul,
 ol,
 li {
-  text-decoration: none;
-  list-style: none;
+    text-decoration: none;
+    list-style: none;
 }
 
 .container {
-  display: flex;
+    display: flex;
 }
-.side {
-  background-color: #4287f5cc;
-  height: 100vh;
-  width: 530px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
+
+aside {
+    background-color: #4287f5cc;
+    height: 100vh;
+    width: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
+
 .photo {
-  margin-top: 50px;
-  width: 200px;
-  height: 200px;
-  background-image: url("../img/FullSizeRender.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  border: 3px solid aliceblue;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border: 3px solid aliceblue;
 }
+
 .name {
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: normal;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: normal;
 }
+
 .info-title {
-  margin: 40px 0 20px;
-  font-size: 20px;
-  font-weight: bold;
+    margin: 40px 0 20px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 .info-grid {
-  display: grid;
-  grid-template-columns: 60px 1fr;
-  row-gap: 10px;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    row-gap: 10px;
 }
+
+aside p{
+    font-family: GangwonEduSaeeum_OTFMediumA;
+    font-size: 25px;
+
+}
+
 .icon {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
+
 .icon-href {
-  text-align: center;
+    text-align: center;
 }
+
 .icon-href:not(:first-child) {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 .cntct-grid {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
 }
+
 .cntct-grid p {
-  font-size: 14px;
+    font-size: 20px;
 }
-.main {
-  color: #4287f5cc;
-  margin: 80px 100px;
-  width: 100%;
+
+main {
+    color: #4287f5cc;
+    margin: 80px 100px;
+    width: 100%;
 }
 h2 {
-  font-size: 50px;
-  margin-bottom: 40px;
+    font-size: 50px;
+    margin-bottom: 40px;
 }
 .main-title {
-  font-size: 26px;
-  z-index: 5;
-  background-color: white;
-  display: inline-block;
-  padding: 0 10px 0 5px;
-  margin-left: 5px;
-  position: relative;
+    font-size: 26px;
+    z-index: 5;
+    display: inline-block;
+    padding: 0 10px 0 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 .main-group {
-  position: relative;
-  width: 90%;
-  height: 50%;
+    width: 90%;
+    height: 50%;
+}
+.stack{
+        display: flex;
+        gap: 20px;
 }
 .content {
-  position: absolute;
-  border: 1.3px solid #4287f5cc;
-  padding: 20px;
-  border-radius: 10px;
-  width: 100%;
-  top: 13px;
-  font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(225, 239, 252, 0.548);
+    
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+.content li{
+    padding-left: 15px;
 }
 li {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 .second {
-  padding: 0 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 80px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
 }
-.second div:first-child {
-  border-right: 2px dotted #4287f5cc;
+
+.second article:first-child {
+    border-right: 2px dotted #4287f5cc;
+    width: 45%;
 }
 .grid-list {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 10px;
-  padding-left: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding-left: 5px;
 }
 .sub-title {
-  font-size: 26px;
-  margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 10px;
 }
 .goal-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+    
+
+.theme-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    font-family: GangwonEduSaeeum_OTFMediumA;
+    font-size: 20px;
 }
